@@ -23,5 +23,3 @@ df = pd.read_csv('rl_value.csv')
 threshold_rl = -4.59168491874878
 filtered_df_rl = df.loc[df['6.89000000000000'] > threshold_rl]
 print(filtered_df_rl)
-
-#jbifryef
