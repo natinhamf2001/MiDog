@@ -15,4 +15,5 @@ with open('lh_value.csv', newline='') as csvfile:
 
         if value > threshold_lh:
             #print("Walk foward")
-            Control.forWard()
+            hello= Control.Control()
+            hello.forWard()
