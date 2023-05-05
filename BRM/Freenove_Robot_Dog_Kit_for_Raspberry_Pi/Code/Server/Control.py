@@ -1,7 +1,7 @@
  # -*- coding: utf-8 -*-
 import time
 import math
-import smbus2
+import smbus
 import copy
 import threading
 from IMU import *
