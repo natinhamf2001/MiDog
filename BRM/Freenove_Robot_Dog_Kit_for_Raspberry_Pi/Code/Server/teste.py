@@ -2,6 +2,7 @@ import csv
 import Control
 
 threshold_lh = -0.388508489993943
+movement_delay = 3
 
 #while True:
 
@@ -17,3 +18,4 @@ with open('lh_value.csv', newline='') as csvfile:
             #print("Walk foward")
             hello= Control.Control()
             hello.forWard()
+            
