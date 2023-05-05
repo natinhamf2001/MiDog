@@ -1,4 +1,5 @@
 import csv
+import Control
 
 threshold_lh = -0.388508489993943
 
@@ -13,4 +14,5 @@ with open('lh_value.csv', newline='') as csvfile:
         value = float(row[0])
 
         if value > threshold_lh:
-            print("Walk foward")
+            #print("Walk foward")
+            Control.forWard()
