@@ -12,6 +12,6 @@ movement_delay = 0.5
 while True:
     for value in 'lh_value.csv':
         if value > threshold_lh:
-            Control.forWard()
-            time.sleep(movement_delay)
+            #Control.forWard()
+            #time.sleep(movement_delay)
             print("Walk forward")

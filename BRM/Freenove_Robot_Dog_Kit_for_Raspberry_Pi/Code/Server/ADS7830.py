@@ -1,4 +1,4 @@
-import smbus
+import smbus2
 import time
 class ADS7830:
 	def __init__(self):
