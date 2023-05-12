@@ -2,7 +2,6 @@ import csv
 import Control
 
 threshold_lh = -0.388508489993943
-movement_delay = 10
 
 #while True:
 
