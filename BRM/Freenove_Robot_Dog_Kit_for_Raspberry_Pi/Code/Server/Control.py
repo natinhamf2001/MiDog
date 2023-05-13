@@ -33,8 +33,8 @@ class Control:
         self.calibration()
         self.relax(True)
     def readFromTxt(self,filename):
-        file1 = open(filename + ".txt", "r")
-        list_row = file1.readlines()
+        with open(filename + ".txt", "r") as file1:
+            list_row = file1.readlines()
         list_source = []
         for i in range(len(list_row)):
             column_list = list_row[i].strip().split("\t")
@@ -42,7 +42,6 @@ class Control:
         for i in range(len(list_source)):
             for j in range(len(list_source[i])):
                 list_source[i][j] = int(list_source[i][j])
-        file1.close()
         return list_source
 
     def saveToTxt(self,list, filename):
